@@ -6,13 +6,13 @@ We can enhance the colors in an image by tunning two things brightness and contr
 windows and every pixel has a membership degree to every window, the membership degrees are calculated depending on 
 the distance between the window and the pixel, then the means and variances are calculated with respect to the membership degrees,
 the final image is obtained by summing up the images of every fuzzy window in a weight way, the weights used are membership degrees.
-## The steps of the algorithm
+## Algorithm Steps
   1. Convert the image to gray level space (if it is rgb convert every channel and work one channel at a time then re-merge them).
   2. Calculate the pixels weights for every window.
   3. Calculate windows means and variances in a wieghted way.
   4. Do b_ij*f + a_ij where "a_ij" is the mean of ij window, "b_ij" is the variance of ij window, "f" is the image.
   5. Summing up the images of every fuzzy window in a weighted way.
-## Results:
+## Results
 - Grayscale:
 
 ![alt text](https://github.com/WaseemKn/FuzzyColorImageEnhancement-FuzzyLogicCourse-ITE5thYear/blob/master/Images/einsteineEnhanced.PNG)
